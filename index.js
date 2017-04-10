@@ -737,7 +737,7 @@ module.exports = function( THREE ) {
 
 		function onMouseWheel( event ) {
 
-			if ( scope.enabled === false || scope.enableZoom === false || ( state !== STATE.NONE && state !== STATE.ROTATE ) ) return;
+			if ( scope.enabled === false || scope.enableZoom === false || ( state !== STATE.NONE && state !== STATE.PAN && state !== STATE.ROTATE ) ) return;
 
 			event.preventDefault();
 			event.stopPropagation();
